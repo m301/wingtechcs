@@ -1,0 +1,22 @@
+{
+  "name": "wingtechcs",
+  "homepage": "https://github.com/m960615/wingtechcs",
+  "authors": [
+    "Madhurendra Sachan <madhurendra@tikaj.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap.min": "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css",
+    "bootstrap": "^3.3.7"
+  }
+}
