@@ -1,0 +1,14 @@
+{
+  "name": "bootstrap.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"b053ba621cf19e20793c1ef8cd227a15\"",
+    "Last-Modified": "Thu, 04 Aug 2016 21:28:04 GMT",
+    "Content-Type": "text/css"
+  },
+  "_release": "e-tag:W/\"b053ba6",
+  "main": "index.css",
+  "_source": "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css",
+  "_target": "*",
+  "_originalSource": "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css",
+  "_direct": true
+}
