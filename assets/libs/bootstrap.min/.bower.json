@@ -1,14 +1,13 @@
 {
   "name": "bootstrap.min",
   "_cacheHeaders": {
-    "ETag": "W/\"b053ba621cf19e20793c1ef8cd227a15\"",
-    "Last-Modified": "Thu, 04 Aug 2016 21:28:04 GMT",
+    "ETag": "W/\"c6cb6dba8b1899ee33a64edb3e4f3ba2\"",
+    "Last-Modified": "Thu, 04 Aug 2016 21:28:08 GMT",
     "Content-Type": "text/css"
   },
-  "_release": "e-tag:W/\"b053ba6",
+  "_release": "e-tag:W/\"c6cb6db",
   "main": "index.css",
-  "_source": "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css",
+  "_source": "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css",
   "_target": "*",
-  "_originalSource": "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css",
-  "_direct": true
+  "_originalSource": "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"
 }
