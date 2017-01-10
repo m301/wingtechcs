@@ -1,0 +1,39 @@
+.bg-1{
+	background-color:#000;
+	opacity:0.5;
+	text-align:center;
+	color:#fff;
+	margin-bottom:10px;
+	padding:20px;
+	
+}
+
+
+.bg-2{
+	margin:20px;
+}
+
+.img-box img{
+	border-radius:2px;
+	
+	box-shadow: 1px 4px 5px #122121;
+}
+
+.bg-2 h3{
+	font-size:2em;
+}
+
+.bg-2 li{
+	font-size:1em;
+}
+
+.divider {
+    width: 200px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.bg-3{
+	background-color:#000;
+	opacity:0.25;
+}
