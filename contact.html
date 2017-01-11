@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is my forum contact page">
     <meta name="author" content="yashasvi1111">
+	<style>
+	#firstname{
+	transform: scale(0.9);}
+	#lastname{
+	transform: scale(0.9);}
+	#email{
+	transform: scale(0.9);}
+	#phone{
+	transform: scale(0.9);}
+	#msg{
+	transform: scale(0.95);}
+	#form{ transition:1s;
+	transform: scale(0.9) translate(30px);
+	}
+	#form:hover{
+	transform: rotate(360deg);
 	
+	}
+	
+	</style>
 	<title>Contact Us!</title>
 	<!-- Bootstrap Core CSS -->
 	<link href="assets/libs/bootstrap.min/index.css" rel="stylesheet">
@@ -58,27 +77,28 @@ Let's talk about ur project</center>
 </div>
 </div>
 </div>
+
 <div class="container">
 <div class="row">
-<div class="col-lg-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 <form class="form-horizontal" role="form">
 <div class="form-group">
 <input type="text" class="form-control" id="firstname"
 placeholder="First Name"></div></form></div>
-<div class="col-lg-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
 <form class="form-horizontal" role="form">
 <div class="form-group">
 <input type="text" class="form-control" id="lastname"
 placeholder="Last Name"></div></form></div>
 </div>
 <div class="row">
-<div class="col-lg-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
 <form class="form-horizontal" role="form">
 <div class="form-group">
 <input type="text" class="form-control" id="email"
 placeholder="Email"></div></form>
 </div>
-<div class="col-lg-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
 <form class="form-horizontal" role="form">
 <div class="form-group">
 <input type="text" class="form-control" id="phone"
@@ -87,13 +107,15 @@ placeholder="Phone"></div></form></div>
 <div class="row">
 <form role="form">
 <div class="form-group">
-<textarea class="form-control" placeholder="Message" rows="3">
+<textarea class="form-control" placeholder="Message" id="msg" rows="3">
 </textarea>
 </div><div class="form-group">
-<button type="submit" class="btn btn-success">SUBMIT</button>
+<button type="submit" id="form" class="btn btn-success">SUBMIT</button>
 </div>
 </form>
-</div></div>
+</div>
+</div>
+
 <div class="page-header">
 <div class="container">
 <div class="row">
@@ -135,7 +157,7 @@ wingtech@bbdu.com<br><br/>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	
 </body>
 </html>
 
