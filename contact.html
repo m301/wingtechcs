@@ -5,18 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is my forum contact page">
     <meta name="author" content="yashasvi1111">
-	
-	<title>Contact Us!</title>
-	<link href="assets/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<style>
-	body{
-	background-image:url('assets/images/blurred-vision.jpg');}
+	#firstname{
+	transform: scale(0.9);}
+	#lastname{
+	transform: scale(0.9);}
+	#email{
+	transform: scale(0.9);}
+	#phone{
+	transform: scale(0.9);}
+	#msg{
+	transform: scale(0.95);}
+	#form{ transition:1s;
+	transform: scale(0.9) translate(30px);
+	}
+	#form:hover{
+	transform: rotate(360deg);
+	
+	}
+	
 	</style>
+	<title>Contact Us!</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="assets/libs/bootstrap.min/index.css" rel="stylesheet">
+  <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|Dosis|Droid+Serif|Noto+Serif|Raleway|Reem+Kufi|Roboto+Mono|Trirong|Ubuntu" rel="stylesheet">
+
+	<!-- Custom CSS -->
+    <link href="assets/css/homepage.css" rel="stylesheet">
+		<!--Animate CSS-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
 </head>
 <body>
 
-<nav class="navbar navbar-pills navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -30,10 +53,10 @@ data-target="#example-navbar-collapse">
 <ul class="nav navbar-nav navbar-right">
 <li><a href="#LOGIN">LOGIN</a></li>
 <li><a href="#REGISTER">REGISTER</a></li>
-<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
 </ul></div></nav>
 
-<div class="jumbotron" style="color:white; background-image:url('assets/images/highway-blurred-background.jpg');">
+<div class="jumbotron" style="color:white; background-image:url('assets/images/phone.jpg');background-size:cover; background-repeat:no-repeat; background-position:center center;">
 <div class="container">
 <h1>Let's make something awsome together</h1>
 <h2>Drop us a line,or give us a heads up if you're interesting in visiting us.</h2>
@@ -46,35 +69,36 @@ data-target="#example-navbar-collapse">
 <div class="col-md-4 col-sm-12">
 </div>
 <div class="col-md-4 col-sm-12">
-<h2>Get In Touch!</h2>
-Let's talk about ur project
+<center><h2>Get In Touch!</h2>
+Let's talk about ur project</center>
 </div>
 <div class="col-md-4 col-sm-12">
 </div>
 </div>
 </div>
 </div>
+
 <div class="container">
 <div class="row">
-<div class="col-lg-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 <form class="form-horizontal" role="form">
 <div class="form-group">
 <input type="text" class="form-control" id="firstname"
 placeholder="First Name"></div></form></div>
-<div class="col-lg-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
 <form class="form-horizontal" role="form">
 <div class="form-group">
 <input type="text" class="form-control" id="lastname"
 placeholder="Last Name"></div></form></div>
 </div>
 <div class="row">
-<div class="col-lg-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
 <form class="form-horizontal" role="form">
 <div class="form-group">
 <input type="text" class="form-control" id="email"
 placeholder="Email"></div></form>
 </div>
-<div class="col-lg-6 col-sm-12">
+<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
 <form class="form-horizontal" role="form">
 <div class="form-group">
 <input type="text" class="form-control" id="phone"
@@ -83,28 +107,30 @@ placeholder="Phone"></div></form></div>
 <div class="row">
 <form role="form">
 <div class="form-group">
-<textarea class="form-control" placeholder="Message" rows="3">
+<textarea class="form-control" placeholder="Message" id="msg" rows="3">
 </textarea>
 </div><div class="form-group">
-<button type="submit" class="btn btn-success">SUBMIT</button>
+<button type="submit" id="form" class="btn btn-success">SUBMIT</button>
 </div>
 </form>
-</div></div>
+</div>
+</div>
+
 <div class="page-header">
 <div class="container">
 <div class="row">
 <div class="col-lg-4 col-md-4 col-sm-12">
 <div class="thumbnail"><h5><strong>Head Office</strong></h5>
-<span class="glyphicon glyphicon-map-marker"></span>
+<i class="fa fa-bank" aria-hidden="true"></i>
 BBDU<br>BBD Green city<br>
 Lucknow.
 </div></div>
 <div class="col-lg-4 col-md-4 col-sm-12">
 <div class="thumbnail"><h5><strong>Contact info</strong></h5>
 <span class="glyphicon glyphicon-envelope"</span>
-wingtech@bbdu.com<br>
-<span class="glyphicon glyphicon-earphone"></span>
-0000-11111<br><span class="glyphicon glyphicon-earphone"></span>
+wingtech@bbdu.com<br><br/>
+<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+0000-11111<br><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
 0000-99999</div></div>
 <div class="col-lg-4 col-md-4 col-sm-12">
 <h5><strong>Follow Us</strong></h5>
@@ -118,38 +144,20 @@ wingtech@bbdu.com<br>
 </div>
 </div>
 </div>
-<div id="footer">
-  <div class="container">
-  <div class="row">
-  <div class="col-lg-3 col-md-3 col-sm-3">
-    <p class="text-muted">Copyrights are reserved.<a href="http://www.wingtech.com">Wingtech</a></p>
-  </div>
-  <div class="col-lg-9 col-md-9 col-sm-9">
- <ul class="nav navbar-nav navbar-right">
-<li><a href="#">EVENTS</a></li>
-<li><a href="#">PROJECT</a></li>
-<li><a href="#">TEAM</a></li>
-<li><a href="#">NEWS & ACHIEVEMENTS</a></li>
-<li><a href="#">ABOUT US</a></li>
-<li><a href="#">CONTACT US</a></li>
-</ul>
- </div>
-  </div>
-  </div>
+
+<footer>
+		<div class="row bg-3">
+			<div class="col-lg-6">
+			Copyright &copy; Team wingtech 2017
+			</div>
 </div>
-
-<ul class="nav pull-right scroll-top">
-  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-</ul>
-
-
-
+		</footer>
 <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	
 </body>
 </html>
 
