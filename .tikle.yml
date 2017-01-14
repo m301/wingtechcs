@@ -1,0 +1,2 @@
+- deploy:
+    targets: "root@tikaj.com:/home/wingtech/web/wingtechcs.com/public_html/"
