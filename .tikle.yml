@@ -1,2 +1,3 @@
 - deploy:
-    targets: "root@tikaj.com:/home/wingtech/web/wingtechcs.com/public_html/"
+    source/: true
+    targets: "root@wingtechcs.com:/home/wingtech/web/wingtechcs.com/public_html/"
