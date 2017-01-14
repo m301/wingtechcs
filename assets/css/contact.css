@@ -1,0 +1,33 @@
+#firstname {
+    transform: scale(0.9);
+}
+
+#lastname {
+    transform: scale(0.9);
+}
+
+#email {
+    transform: scale(0.9);
+}
+
+#phone {
+    transform: scale(0.9);
+}
+
+#msg {
+    transform: scale(0.95);
+}
+
+#form {
+    transition: 1s;
+    transform: scale(0.9) translate(30px);
+}
+
+#form:hover {
+    transform: rotate(360deg);
+
+}
+
+.infoboxes {
+    padding: 15px;
+}
