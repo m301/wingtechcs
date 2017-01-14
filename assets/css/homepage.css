@@ -1,6 +1,27 @@
-header.carousel{
-	height:80%;
-}
+/*@media screen and (max-width: 1159) and (min-width: 780px)*/
+/*{*/
+/**/
+/*header.carousel{*/
+/*height:70%;*/
+/*}*/
+/*}*/
+
+/*@media screen and (max-width: 779px) and (min-width: 520px)*/
+/*{*/
+/**/
+/*header.carousel{*/
+/*height:50%;*/
+/*margin-top:20px;*/
+/**/
+/*}*/
+/*}*/
+
+/*@media screen and (min-width: 1160px)*/
+/*{*/
+/*header.carousel{*/
+/*height:80%;*/
+/*}*/
+/*}*/
 .view {
     width: 350px;
     height: 200px;
@@ -8,7 +29,7 @@ header.carousel{
 
 	
 	padding:0;
-    float: center;
+    --float: center;
     border: 10px #fff;
     overflow: hidden;
     position: relative;
@@ -120,7 +141,7 @@ header.carousel{
 .bg-2{
 	
 	padding:30px;
-	padding-right:10px
+    padding-right: 10px;
 	color:#fff;
 }
 
@@ -152,11 +173,8 @@ header.carousel{
 
 .bg-1 h1{
 	text-align:center;
-	 margin: 5;
     text-shadow: 2px 2px 3px rgba(0,0,0,1);
-    font-size: 4em;
-	padding: 10;
-	
+    font-family: 'Trirong', serif;
 }
 
 .bg-1 .about-block:hover{
@@ -177,7 +195,7 @@ ul.intro-buttons > li{
 }
 
 .bg-4 {
-	padding:10px;
+    padding: 20px;
 	text-align:center;
 	background-color:rgba(0,0,0,0.5);
 }
@@ -204,11 +222,6 @@ ul.intro-buttons > li{
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.bg-1 h1{
-	font-family:'Trirong',serif;
-	text-shadow:15px #000;
-	font-size:3em;
-}
 
 .about-content{
 	
@@ -216,3 +229,4 @@ font-family: 'Reem Kufi', sans-serif;
 	text-shadow:15px #000;
 	font-size:1em;
 }
+
