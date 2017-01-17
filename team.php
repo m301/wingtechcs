@@ -1,50 +1,13 @@
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Team : Wingtech</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="assets/libs/bootstrap.min/index.css" rel="stylesheet">
-    <link href="assets/css/common.css" rel="stylesheet">
-    <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-
+	<?php include "head.inc"; ?>
     <!-- Custom CSS -->
     <link href="assets/css/homepage.css" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/teamcss.css">
 </head>
 <body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#section-list">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">WINGTECH
-                <small><i class="fa fa-star"></i> way to innovation <i class="fa fa-star"></i></small>
-            </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="section-list">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
-                <li>
-                    <a href="register.html">Register</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<?php include "nav.inc"; ?>
 <p>
 <hr>
 <!--TEAM PAGE-->
@@ -361,32 +324,7 @@
         </div>
     </div>
     <br/>
-    <footer>
-        <div class="row bg-3">
-            <div class="col-lg-6">
-                <br/>
-                Copyright &copy; Team wingtech 2017
-            </div>
-
-            <div class="col-lg-4 col-lg-offset-2">
-                <ul class="list-inline intro-buttons">
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg footer-btn" id="logIn">Log In <i
-                                class="fa fa-arrow-right fa-fw"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg footer-btn" id="register">Register <i
-                                class="fa fa-arrow-right fa-fw"></i></a>
-                    </li>
-
-                </ul>
-
-            </div>
-            <div class="text-center">
-                <h6>Coded with <i class="fa fa-heart red"></i> at WINGTECH</a></h6>
-            </div>
-        </div>
-    </footer>
+    <?php include "footer.inc"; ?>
 </div>
 
 </body>

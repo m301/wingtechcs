@@ -15,8 +15,8 @@ $('.carousel').carousel({
 	$(this).removeClass('animated rubberBand');});
 	
 	$('#logIn').hover(function(e){
-	$(this).addClass('animated pulse');},function(e){
-	$(this).removeClass('animated pulse');});
+	$(this).addClass('hvr-float');},function(e){
+	$(this).removeClass('hvr-float');});
 	
 	
 	$('#register').hover(function(e){
