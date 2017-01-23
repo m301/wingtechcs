@@ -1,3 +1,4 @@
+
 <html>
 <head>
   
@@ -12,8 +13,13 @@
 <p>
 <hr>
 <!--TEAM PAGE-->
-
-<div class="container">
+<?php
+$events=array(
+        array('Hacking','26th of November,2017','/regiter.php'),
+		array('Web development','28th of December,2017','/regiter.php'),
+		array('php','11th of January,2017','/regiter.php')
+		);
+echo '<div class="container">
     <div class="row">
 
         <div class="jumbotron" style="background-color:rgba(0,0,0,0.25);padding: 5px 10px 10px 20px;
@@ -32,7 +38,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6 col-md-3">
                         <div class="form-group" style="padding: 70px 0 0 0;">
-                            Don't want to miss any event ?
+                            Dont want to miss any event ?
                             <button type="submit" class="btn btn-success">Subscribe</button>
                         </div>
                     </div>
@@ -49,34 +55,36 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-12">
                     <img src="assets/images/hacking.jpg" height="100px" width="300px">
-                    <h3><b>Hacking</b></h3>
+                    <h3><b>'.$events[0][0].'</b></h3>
                     BBD campus,<br>
-                    BBDU,Lucknow.<br><br>
-                    26th of November,2017.<br>
-                    <a href="#">LEARN MORE..</a>
+                    BBDU,Lucknow.<br><br>'
+                    .$events[0][1].'<br>
+                    <a href="#">'.$events[0][2].'</a>
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <img src="assets/images/web.jpg" height="100px" width="300px">
-                    <h3><b>WEB DEVELOPMENT</b></h3>
+                    <h3><b>'.$events[1][0].'</b></h3>
                     BBD campus,<br>
-                    BBDU,Lucknow.<br><br>
-                    28th of December,2017.<br>
-                    <a href="#">LEARN MORE..</a>
+                    BBDU,Lucknow.<br><br>'
+                    .$events[1][1].'<br>
+                    <a href="#">'.$events[1][2].'</a>
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <img src="assets/images/php.jpg" height="100px" width="300px">
-                    <h3><b>php</b></h3>
+                    <h3><b>'.$events[2][0].'</b></h3>
                     BBD campus,<br>
-                    BBDU,Lucknow.<br><br>
-                    11th of January,2017.<br>
-                    <a href="#">LEARN MORE..</a>
+                    BBDU,Lucknow.<br><br>'
+                    .$events[2][1].'<br>
+                    <a href="#">'.$events[2][2].'</a>
                 </div>
             </div>
         </div>
     </div>
-    <br/>
-   <?php include "footer.inc"; ?>
-</div>
+    <br/>';
+   
+?>
 
+<?php include "footer.inc";?> 
+</div> 
 </body>
 </html>
