@@ -11,8 +11,13 @@
 <p>
 <hr>
 <!--TEAM PAGE-->
-
-<div class="container">
+<?php 
+$news=array(
+        array('eventname1','26th of November,2017','/regiter.php'),
+		array('eventname2','28th of December,2017','/regiter.php'),
+		array('eventname3','11th of January,2017','/regiter.php')
+		);
+echo'<div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
 
@@ -30,10 +35,10 @@
                             <img class="img-responsive" src="assets\images\news.jpg"></img></div>
                     </div>
                     <div class="col-lg-8">
-                        <h3>Event Name</h3>
+                        <h3>'.$news[0][0].'<h3>
                         <ul>
-                            <li>description 1</li>
-                            <li>description 2</li>
+                            <li>'.$news[0][1].'</li>
+                            <li>'.$news[0][2].'</li>
                             <li>#3</li>
                         </ul>
                     </div>
@@ -45,10 +50,10 @@
                             <img class="img-responsive" src="assets\images\news.jpg"></img></div>
                     </div>
                     <div class="col-lg-8">
-                        <h3>Event Name</h3>
+                        <h3>'.$news[1][0].'</h3>
                         <ul>
-                            <li>description 1</li>
-                            <li>description 2</li>
+                            <li>'.$news[1][1].'</li>
+                            <li>'.$news[1][2].'</li>
                             <li>#3</li>
                         </ul>
                     </div>
@@ -60,10 +65,10 @@
                             <img class="img-responsive" src="assets\images\news.jpg"></img></div>
                     </div>
                     <div class="col-lg-8">
-                        <h3>Event Name</h3>
+                        <h3>'.$news[2][0].'</h3>
                         <ul>
-                            <li>description 1</li>
-                            <li>description 2</li>
+                            <li>'.$news[2][1].'</li>
+                            <li>'.$news[2][2].'</li>
                             <li>#3</li>
                         </ul>
                     </div>
@@ -71,7 +76,8 @@
             </div>
         </div>
     </div>
-    <br/>
+    <br/>';
+	?>
     <?php include "footer.inc"; ?>
 </div>
 
