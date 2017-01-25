@@ -15,11 +15,12 @@
 <!--TEAM PAGE-->
 <?php
 $events=array(
-        array('Hacking','26th of November,2017','/regiter.php'),
-		array('Web development','28th of December,2017','/regiter.php'),
-		array('php','11th of January,2017','/regiter.php')
-		);
-echo '<div class="container">
+        array('image'=>'assets/images/hacking.jpg','title'=>'Hacking','date'=>'26th of November,2017','link'=>'/regiter.php'),
+		array('image'=>'assets/images/web.jpg','title'=>'Web development','date'=>'28th of December,2017','link'=>'/regiter.php'),
+		array('image'=>'assets/images/php.jpg','title'=>'php','date'=>'11th of January,2017','link'=>'/regiter.php')
+		); 
+		$i=count($events);?>
+<div class="container">
     <div class="row">
 
         <div class="jumbotron" style="background-color:rgba(0,0,0,0.25);padding: 5px 10px 10px 20px;
@@ -53,36 +54,24 @@ echo '<div class="container">
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-12">
-                    <img src="assets/images/hacking.jpg" height="100px" width="300px">
-                    <h3><b>'.$events[0][0].'</b></h3>
+			<?php
+			for($l=0;$l<$i;$l++)
+               echo '<div class="col-lg-4 col-sm-12">
+                    <img src="'.$events[$l]['image'].'" height="100px" width="300px">
+                    <h3><b>'.$events[$l]['title'].'</b></h3>
                     BBD campus,<br>
                     BBDU,Lucknow.<br><br>'
-                    .$events[0][1].'<br>
-                    <a href="#">'.$events[0][2].'</a>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <img src="assets/images/web.jpg" height="100px" width="300px">
-                    <h3><b>'.$events[1][0].'</b></h3>
-                    BBD campus,<br>
-                    BBDU,Lucknow.<br><br>'
-                    .$events[1][1].'<br>
-                    <a href="#">'.$events[1][2].'</a>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <img src="assets/images/php.jpg" height="100px" width="300px">
-                    <h3><b>'.$events[2][0].'</b></h3>
-                    BBD campus,<br>
-                    BBDU,Lucknow.<br><br>'
-                    .$events[2][1].'<br>
-                    <a href="#">'.$events[2][2].'</a>
-                </div>
+                    .$events[$l]['date'].'<br>
+                    <a href="'.$events[$l]['link'].'">LEARN MORE..</a>
+                </div>';
+				?>
+               
             </div>
         </div>
     </div>
-    <br/>';
+    <br/>
    
-?>
+
 
 <?php include "footer.inc";?> 
 </div> 
