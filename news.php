@@ -13,11 +13,12 @@
 <!--TEAM PAGE-->
 <?php 
 $news=array(
-        array('eventname1','26th of November,2017','/regiter.php'),
-		array('eventname2','28th of December,2017','/regiter.php'),
-		array('eventname3','11th of January,2017','/regiter.php')
-		);
-echo'<div class="container">
+        array('image'=>'assets\images\news.jpg','title'=>'eventname1','date'=>'26th of November,2017','link'=>'/regiter.php'),
+		array('image'=>'assets\images\news.jpg','title'=>'eventname2','date'=>'28th of December,2017','link'=>'/regiter.php'),
+		array('image'=>'assets\images\news.jpg','title'=>'eventname3','date'=>'11th of January,2017','link'=>'/regiter.php')
+		); 
+		$i=count($news);?>
+<div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
 
@@ -29,55 +30,27 @@ echo'<div class="container">
                 </div>
             </div>
             <div class="container">
-                <div class="row bg-2">
+			<?php
+			for($l=0;$l<$i;$l++)
+                echo'<div class="row bg-2">
                     <div class="col-lg-4">
                         <div class="img-box">
-                            <img class="img-responsive" src="assets\images\news.jpg"></img></div>
+                            <img class="img-responsive" src="'.$news[$l]['image'].'"></img></div>
                     </div>
                     <div class="col-lg-8">
-                        <h3>'.$news[0][0].'<h3>
+                        <h3>'.$news[$l]['title'].'<h3>
                         <ul>
-                            <li>'.$news[0][1].'</li>
-                            <li>'.$news[0][2].'</li>
+                            <li>'.$news[$l]['date'].'</li>
+                            <li>'.$news[$l]['link'].'</li>
                             <li>#3</li>
                         </ul>
                     </div>
-                </div>
-
-                <div class="row bg-2">
-                    <div class="col-lg-4">
-                        <div class="img-box">
-                            <img class="img-responsive" src="assets\images\news.jpg"></img></div>
-                    </div>
-                    <div class="col-lg-8">
-                        <h3>'.$news[1][0].'</h3>
-                        <ul>
-                            <li>'.$news[1][1].'</li>
-                            <li>'.$news[1][2].'</li>
-                            <li>#3</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row bg-2">
-                    <div class="col-lg-4">
-                        <div class="img-box">
-                            <img class="img-responsive" src="assets\images\news.jpg"></img></div>
-                    </div>
-                    <div class="col-lg-8">
-                        <h3>'.$news[2][0].'</h3>
-                        <ul>
-                            <li>'.$news[2][1].'</li>
-                            <li>'.$news[2][2].'</li>
-                            <li>#3</li>
-                        </ul>
-                    </div>
-                </div>
+                </div>';
+			?>
             </div>
         </div>
     </div>
-    <br/>';
-	?>
+    <br/>
     <?php include "footer.inc"; ?>
 </div>
 
