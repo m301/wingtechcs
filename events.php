@@ -9,17 +9,18 @@
 
 </head>
 <body>
-<?php include "nav.inc"; ?>
+<?php include "nav.inc";?> 
 <p>
 <hr>
+<?php include "event_con.php";?>
 <!--TEAM PAGE-->
 <?php
-$events=array(
-        array('image'=>'assets/images/hacking.jpg','title'=>'Hacking','date'=>'26th of November,2017','link'=>'/regiter.php'),
-		array('image'=>'assets/images/web.jpg','title'=>'Web development','date'=>'28th of December,2017','link'=>'/regiter.php'),
-		array('image'=>'assets/images/php.jpg','title'=>'php','date'=>'11th of January,2017','link'=>'/regiter.php')
-		); 
-		$i=count($events);?>
+//$events=array(
+        //array('image'=>'assets/images/hacking.jpg','title'=>'Hacking','date'=>'26th of November,2017','link'=>'/regiter.php'),
+		//array('image'=>'assets/images/web.jpg','title'=>'Web development','date'=>'28th of December,2017','link'=>'/regiter.php'),
+		//array('image'=>'assets/images/php.jpg','title'=>'php','date'=>'11th of January,2017','link'=>'/regiter.php')
+		//); 
+		//$i=count($events);?>
 <div class="container">
     <div class="row">
 
@@ -55,14 +56,16 @@ $events=array(
         <div class="container">
             <div class="row">
 			<?php
-			for($l=0;$l<$i;$l++)
+			//for($l=0;$l<$i;$l++)
+				$answer=mysqli_query($conn,'SELECT * FROM events_info ');
+			while($output=mysqli_fetch_array($answer,MYSQL_NUM))
                echo '<div class="col-lg-4 col-sm-12">
-                    <img src="'.$events[$l]['image'].'" height="100px" width="300px">
-                    <h3><b>'.$events[$l]['title'].'</b></h3>
+                    <img src="'.$output[1].'" height="100px" width="300px">
+                    <h3><b>'.$output[2].'</b></h3>
                     BBD campus,<br>
                     BBDU,Lucknow.<br><br>'
-                    .$events[$l]['date'].'<br>
-                    <a href="'.$events[$l]['link'].'">LEARN MORE..</a>
+                    .$output[3].'<br>
+                    <a href="'.$output[4].'">LEARN MORE..</a>
                 </div>';
 				?>
                
