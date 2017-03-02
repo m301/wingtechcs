@@ -12,9 +12,11 @@
 <hr>
 <!--TEAM PAGE-->
 <?php include "team_data.php";
-$i=count($team['core']);
-$j=count($team['technical']);
-$k=count($team['management']);
+//$i=count($team['core']);
+//$j=count($team['technical']);
+//$k=count($team['management']);
+
+include "conn_team.php";
 ?>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -25,33 +27,38 @@ $k=count($team['management']);
                 <hr>
 				<div class="row pt-md">
 					<?php
-						$off=floor((12-3*$i)/2);
-						for($l=0;$l<$i;$l++)
-						echo '<div class="col-lg-offset-'.$off.' col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+					$result=mysqli_query($conn,'SELECT * FROM team_profile WHERE roll="core"');
+						
+						//$off=floor((12-3*$i)/2);
+						//if($row)
+							//echo 'HURRAY!';
+							while($row=mysqli_fetch_array($result,MYSQL_NUM))
+					
+						echo '<div class=" col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box">
-                            <img src=" '.$team['core'][$l]['photo'].'" class="img-responsive">
+                            <img src="'.$row[8].'" class="img-responsive">
                             <ul class="text-center">
-                                <a href="'.$team['core'][$l]['twt'].'">
+                                <a href="'.$row[5].'">
                                     <li><i class="fa fa-facebook"></i></li>
                                 </a>
-                                <a href="'.$team['core'][$l]['twt'].'">
+                                <a href="'.$row[6].'">
                                     <li><i class="fa fa-twitter"></i></li>
                                 </a>
-                                <a href="'.$team['core'][$l]['in'].'">
+                                <a href="'.$row[7].'">
                                     <li><i class="fa fa-linkedin"></i></li>
                                 </a>
                             </ul>
                         </div>
-                        <h1>'.$team['core'][$l]['name'].'</h1>
-                        <h2>'.$team['core'][$l]['desig'].'</h2>
-                        <p>'.$team['core'][$l]['year'].' Year</p>
+                        <h1>'.$row[1].'</h1>
+                        <h2>'.$row[2].'</h2>
+                        <p>'.$row[3].' Year</p>
                     </div>'	
 							
 							
 					?>
                     
 
-                    <!--- for breaking line---->
+                    
 
                 </div>
                 <div class="row pt-md">
@@ -60,34 +67,34 @@ $k=count($team['management']);
                         <ul><b>Technical Team</b></ul>
                     </h3>
 					<?php
-					for($l=0;$l<$j;$l++)
-					{ 
-						echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+					$result=mysqli_query($conn,'SELECT * FROM team_profile WHERE roll="technical"');
+						
+					
+							while($row=mysqli_fetch_array($result,MYSQL_NUM))
+					
+						echo '<div class=" col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box">
-                            <img src=" '.$team['technical'][$l]['photo'].'" class="img-responsive">
+                            <img src="'.$row[8].'" class="img-responsive">
                             <ul class="text-center">
-                                <a href="'.$team['technical'][$l]['twt'].'">
+                                <a href="'.$row[5].'">
                                     <li><i class="fa fa-facebook"></i></li>
                                 </a>
-                                <a href="'.$team['technical'][$l]['twt'].'">
+                                <a href="'.$row[6].'">
                                     <li><i class="fa fa-twitter"></i></li>
                                 </a>
-                                <a href="'.$team['technical'][$l]['in'].'">
+                                <a href="'.$row[7].'">
                                     <li><i class="fa fa-linkedin"></i></li>
                                 </a>
                             </ul>
                         </div>
-                        <h1>'.$team['technical'][$l]['name'].'</h1>
-                        <h2>'.$team['technical'][$l]['desig'].'</h2>
-                        <p>'.$team['technical'][$l]['year'].' Year</p>
-                    </div>'	;
-							
-							
-					}
+                        <h1>'.$row[1].'</h1>
+                        <h2>'.$row[2].'</h2>
+                        <p>'.$row[3].' Year</p>
+                    </div>'	
 					?>
       
 
-                    <!--- for breaking line---->
+                    
                 </div>
                 <div class="row pt-md">
                     <hr>
@@ -95,25 +102,29 @@ $k=count($team['management']);
                         <ul><b>Management Team</b></ul>
                     </h3>
 					<?php
-					for($l=0;$l<$k;$l++)
-						echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+					$result=mysqli_query($conn,'SELECT * FROM team_profile WHERE roll="management"');
+						
+	
+							while($row=mysqli_fetch_array($result,MYSQL_NUM))
+					
+						echo '<div class=" col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box">
-                            <img src=" '.$team['management'][$l]['photo'].'" class="img-responsive">
+                            <img src="'.$row[8].'" class="img-responsive">
                             <ul class="text-center">
-                                <a href="'.$team['management'][$l]['twt'].'">
+                                <a href="'.$row[5].'">
                                     <li><i class="fa fa-facebook"></i></li>
                                 </a>
-                                <a href="'.$team['management'][$l]['twt'].'">
+                                <a href="'.$row[6].'">
                                     <li><i class="fa fa-twitter"></i></li>
                                 </a>
-                                <a href="'.$team['management'][$l]['in'].'">
+                                <a href="'.$row[7].'">
                                     <li><i class="fa fa-linkedin"></i></li>
                                 </a>
                             </ul>
                         </div>
-                        <h1>'.$team['management'][$l]['name'].'</h1>
-                        <h2>'.$team['management'][$l]['desig'].'</h2>
-                        <p>'.$team['management'][$l]['year'].' Year</p>
+                        <h1>'.$row[1].'</h1>
+                        <h2>'.$row[2].'</h2>
+                        <p>'.$row[3].' Year</p>
                     </div>'	
 					?>
                     
