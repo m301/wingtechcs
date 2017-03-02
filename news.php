@@ -10,14 +10,16 @@
 <?php include "nav.inc"; ?>
 <p>
 <hr>
+<?php include "news_con.php";?>
 <!--TEAM PAGE-->
 <?php 
-$news=array(
-        array('image'=>'assets\images\news.jpg','title'=>'eventname1','date'=>'26th of November,2017','link'=>'/regiter.php'),
-		array('image'=>'assets\images\news.jpg','title'=>'eventname2','date'=>'28th of December,2017','link'=>'/regiter.php'),
-		array('image'=>'assets\images\news.jpg','title'=>'eventname3','date'=>'11th of January,2017','link'=>'/regiter.php')
-		); 
-		$i=count($news);?>
+//$news=array(
+		//  array('image'=>'assets\images\news.jpg','title'=>'eventname1','date'=>'26th of November,2017','link'=>'/regiter.php'),
+		//array('image'=>'assets\images\news.jpg','title'=>'eventname2','date'=>'28th of December,2017','link'=>'/regiter.php'),
+		//array('image'=>'assets\images\news.jpg','title'=>'eventname3','date'=>'11th of January,2017','link'=>'/regiter.php')
+		//); 
+		//$i=count($news);
+		?>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -31,17 +33,19 @@ $news=array(
             </div>
             <div class="container">
 			<?php
-			for($l=0;$l<$i;$l++)
-                echo'<div class="row bg-2">
+			//for($l=0;$l<$i;$l++)
+				$answer=mysqli_query($conn,'SELECT * FROM news_info ;');
+			while($output=mysqli_fetch_array($answer,MYSQL_NUM))
+                echo '<div class="row bg-2">
                     <div class="col-lg-4">
                         <div class="img-box">
-                            <img class="img-responsive" src="'.$news[$l]['image'].'"></img></div>
+                            <img class="img-responsive" src="'.$output[1].'"></img></div>
                     </div>
                     <div class="col-lg-8">
-                        <h3>'.$news[$l]['title'].'<h3>
+                        <h3>'.$output[2].'</h3>
                         <ul>
-                            <li>'.$news[$l]['date'].'</li>
-                            <li>'.$news[$l]['link'].'</li>
+                            <li>'.$output[3].'</li>
+                            <li>'.$output[4].'</li>
                             <li>#3</li>
                         </ul>
                     </div>
