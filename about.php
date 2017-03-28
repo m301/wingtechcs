@@ -15,7 +15,7 @@
 	      <div class="content">
 <b><i><u>ABOUT <BR><BR> WINGTECH</b></i></u>
     </div>
-</div> 
+</div>
 <div class="row bg-1">
 		<div class="col-lg-12" style="padding:20px;">
 		<h1><center>  Wingtech's mission is to enhance technical skill's of bbdian's</center><h1>
@@ -28,10 +28,10 @@
 	<div class="row bg-2 card">
 		<div class="activity">
 			<div class="col-lg-4 col-md-6 col-sm-6 flip">
-               <div class="front">		  		
+               <div class="front">
 			     <a href="#">
                     <img src="assets/images/event.jpg"> </a>
-				</div>	
+				</div>
 				<div class="back">
 				    information
 				</div>
@@ -52,34 +52,34 @@
 				</div>
                 <div class="back">
 				    information
-				</div>				
+				</div>
 	 	     </div>
 			<div class="col-lg-4 col-md-6 col-sm-6 flip">
 			    <div class="front">
 			       <a href="#">
                       <img src="assets/images/quiz.jpg"/></a>
-				</div>	
+				</div>
                 <div class="back">
 				    information
-				</div>								
+				</div>
 		    </div>
 			<div class="col-lg-4 col-md-6 col-sm-6 flip">
 			    <div class="front">
 			       <a href="#">
                       <img src="assets/images/seminar.jpg" /></a>
-				</div>	
+				</div>
                 <div class="back">
 				    information
-				</div>								
+				</div>
 	 	    </div>
 			<div class="col-lg-4 col-md-6 col-sm-6 flip">
 			    <div class="front">
 			       <a href="#">
                       <img src="assets/images/workshop.jpg" />	 </a>
-				</div>	 
+				</div>
                 <div class="back">
 				    information
-				</div>								
+				</div>
 		    </div>
 		 </div>
 	  </div>

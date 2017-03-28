@@ -11,12 +11,9 @@
 <p>
 <hr>
 <!--TEAM PAGE-->
-<?php include "team_data.php";
-//$i=count($team['core']);
-//$j=count($team['technical']);
-//$k=count($team['management']);
-
-include "conn_team.php";
+<?php
+include "include/config.db.php";
+$conn=getMYSQLIConnection();
 ?>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -27,13 +24,13 @@ include "conn_team.php";
                 <hr>
 				<div class="row pt-md">
 					<?php
-					$result=mysqli_query($conn,'SELECT * FROM team_profile WHERE roll="core"');
-						
+					$result=$conn->query('SELECT * FROM team_profile WHERE roll="core"');
+
 						//$off=floor((12-3*$i)/2);
 						//if($row)
 							//echo 'HURRAY!';
 							while($row=mysqli_fetch_array($result,MYSQL_NUM))
-					
+
 						echo '<div class=" col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box">
                             <img src="'.$row[8].'" class="img-responsive">
@@ -52,13 +49,13 @@ include "conn_team.php";
                         <h1>'.$row[1].'</h1>
                         <h2>'.$row[2].'</h2>
                         <p>'.$row[3].' Year</p>
-                    </div>'	
-							
-							
-					?>
-                    
+                    </div>'
 
-                    
+
+					?>
+
+
+
 
                 </div>
                 <div class="row pt-md">
@@ -67,11 +64,11 @@ include "conn_team.php";
                         <ul><b>Technical Team</b></ul>
                     </h3>
 					<?php
-					$result=mysqli_query($conn,'SELECT * FROM team_profile WHERE roll="technical"');
-						
-					
+					$result=$conn->query($conn,'SELECT * FROM team_profile WHERE roll="technical"');
+
+
 							while($row=mysqli_fetch_array($result,MYSQL_NUM))
-					
+
 						echo '<div class=" col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box">
                             <img src="'.$row[8].'" class="img-responsive">
@@ -90,11 +87,11 @@ include "conn_team.php";
                         <h1>'.$row[1].'</h1>
                         <h2>'.$row[2].'</h2>
                         <p>'.$row[3].' Year</p>
-                    </div>'	
+                    </div>'
 					?>
-      
 
-                    
+
+
                 </div>
                 <div class="row pt-md">
                     <hr>
@@ -102,11 +99,11 @@ include "conn_team.php";
                         <ul><b>Management Team</b></ul>
                     </h3>
 					<?php
-					$result=mysqli_query($conn,'SELECT * FROM team_profile WHERE roll="management"');
-						
-	
+					$result=$conn->query(,'SELECT * FROM team_profile WHERE roll="management"');
+
+
 							while($row=mysqli_fetch_array($result,MYSQL_NUM))
-					
+
 						echo '<div class=" col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                         <div class="img-box">
                             <img src="'.$row[8].'" class="img-responsive">
@@ -125,9 +122,9 @@ include "conn_team.php";
                         <h1>'.$row[1].'</h1>
                         <h2>'.$row[2].'</h2>
                         <p>'.$row[3].' Year</p>
-                    </div>'	
+                    </div>'
 					?>
-                    
+
 
                 </div>
             </div>
@@ -135,7 +132,7 @@ include "conn_team.php";
     </div>
     <br/>
     <?php include "footer.inc"; ?>
-	
+
 	<script src="assets/js/homepage.js"></script>
 </div>
 

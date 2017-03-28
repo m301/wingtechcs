@@ -1,7 +1,7 @@
 
 <html>
 <head>
-  
+
     <title>Events : Wingtech</title>
 	<?php include "head.inc"; ?>
     <!-- Custom CSS -->
@@ -9,18 +9,12 @@
 
 </head>
 <body>
-<?php include "nav.inc";?> 
+<?php include "nav.inc";?>
 <p>
 <hr>
-<?php include "event_con.php";?>
-<!--TEAM PAGE-->
 <?php
-//$events=array(
-        //array('image'=>'assets/images/hacking.jpg','title'=>'Hacking','date'=>'26th of November,2017','link'=>'/regiter.php'),
-		//array('image'=>'assets/images/web.jpg','title'=>'Web development','date'=>'28th of December,2017','link'=>'/regiter.php'),
-		//array('image'=>'assets/images/php.jpg','title'=>'php','date'=>'11th of January,2017','link'=>'/regiter.php')
-		//); 
-		//$i=count($events);?>
+include "include/config.db.php";
+$conn=getMYSQLIConnection();?>
 <div class="container">
     <div class="row">
 
@@ -68,15 +62,15 @@
                     <a href="'.$output[4].'">LEARN MORE..</a>
                 </div>';
 				?>
-               
+
             </div>
         </div>
     </div>
     <br/>
-   
 
 
-<?php include "footer.inc";?> 
-</div> 
+
+<?php include "footer.inc";?>
+</div>
 </body>
 </html>

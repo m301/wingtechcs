@@ -10,16 +10,8 @@
 <?php include "nav.inc"; ?>
 <p>
 <hr>
-<?php include "news_con.php";?>
-<!--TEAM PAGE-->
-<?php 
-//$news=array(
-		//  array('image'=>'assets\images\news.jpg','title'=>'eventname1','date'=>'26th of November,2017','link'=>'/regiter.php'),
-		//array('image'=>'assets\images\news.jpg','title'=>'eventname2','date'=>'28th of December,2017','link'=>'/regiter.php'),
-		//array('image'=>'assets\images\news.jpg','title'=>'eventname3','date'=>'11th of January,2017','link'=>'/regiter.php')
-		//); 
-		//$i=count($news);
-		?>
+<?php include "include/config.db.php";
+$conn=getMYSQLIConnection(); ?>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
