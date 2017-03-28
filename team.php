@@ -24,7 +24,7 @@ $conn = getMYSQLIConnection();
                 <b>Meet The Team
                 </b>
             </h2>
-            <p>WingTech is comprised of ultra-talented and experienced designers, developers and programmers.
+            <p>Wingtech is comprised of ultra-talented and experienced designers, developers and programmers.
                 Learn more about each person by reading their descriptions below:
             </p>
             <hr>

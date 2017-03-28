@@ -1,92 +1,47 @@
 <html>
-	<head>
-	<title>About</title>
+<head>
+
+    <title>About : Wingtech</title>
 	<?php include "head.inc"; ?>
-	<!-- Custom CSS -->
-  <link href="assets/css/about.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/homepage.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <?php include "head.inc"; ?>
+</head>
 
-	</head>
+<body>
 
-	<body>
-
-	<?php include "nav.inc"; ?>
-	<div class="row image">
-    <img src="assets/images/pic1.jpg" alt="pic">
-	      <div class="content">
-<b><i><u>ABOUT <BR><BR> WINGTECH</b></i></u>
-    </div>
-</div>
-<div class="row bg-1">
-		<div class="col-lg-12" style="padding:20px;">
-		<h1><center>  Wingtech's mission is to enhance technical skill's of bbdian's</center><h1>
+<?php include "nav.inc"; ?>
+<!-- Header Carousel -->
+<div class="container">
+	<br/>
+  <div class="row bg-4">
+		<div class="wrapper">
+		<div class="col-lg-12">
+        <h2 >Wingtech</h2>
+        <hr class="brand-divider">
+        <h5>The Official technical community of Babu Banarasi Das University</h5>
 		</div>
+		</div>
+    </div>
+    <div class="row bg-1">
+        <div class="col-lg-12" style="padding:10px;">
+            <h1>
+                <center>About us</center>
+            </h1>
+        </div>
+        <div class="row">
+
+        </div>
+
+    </div>
+
+
+    <?php include "footer.inc"; ?>
 </div>
-<div class="row bg-4">
-			<h5>Activities in WINGTECH</h5>
-            <hr class="brand-divider">
-			</div>
-	<div class="row bg-2 card">
-		<div class="activity">
-			<div class="col-lg-4 col-md-6 col-sm-6 flip">
-               <div class="front">
-			     <a href="#">
-                    <img src="assets/images/event.jpg"> </a>
-				</div>
-				<div class="back">
-				    information
-				</div>
-	        </div>
-			<div class="col-lg-4 col-md-6 col-sm-6 flip">
-			   <div class="front">
-			      <a href="#">
-	                <img src="assets/images/nonTech.jpg"></a>
-				</div>
-				<div class="back">
-				    information
-				</div>
-	 	    </div>
-			<div class="col-lg-4 col-md-6 col-sm-6 flip">
-			    <div class="front">
-			      <a href="#">
-                    <img src="assets/images/projects.jpg" /></a>
-				</div>
-                <div class="back">
-				    information
-				</div>
-	 	     </div>
-			<div class="col-lg-4 col-md-6 col-sm-6 flip">
-			    <div class="front">
-			       <a href="#">
-                      <img src="assets/images/quiz.jpg"/></a>
-				</div>
-                <div class="back">
-				    information
-				</div>
-		    </div>
-			<div class="col-lg-4 col-md-6 col-sm-6 flip">
-			    <div class="front">
-			       <a href="#">
-                      <img src="assets/images/seminar.jpg" /></a>
-				</div>
-                <div class="back">
-				    information
-				</div>
-	 	    </div>
-			<div class="col-lg-4 col-md-6 col-sm-6 flip">
-			    <div class="front">
-			       <a href="#">
-                      <img src="assets/images/workshop.jpg" />	 </a>
-				</div>
-                <div class="back">
-				    information
-				</div>
-		    </div>
-		 </div>
-	  </div>
-	  	<?php include "footer.inc"; ?>
-			<!-- jQuery -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-		</body>
-		</html>
+<!-- jQuery -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ define('DB_DATABASE', 'wingtech_admin');
 
 function getMYSQLIConnection(){
   $conn= new mysqli(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
-  if($conn->errorno)
+  if(!$conn)
   	die('Couldn\'t connect!'.mysqli_connect_error());
   return $conn;
 }
