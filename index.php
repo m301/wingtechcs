@@ -1,6 +1,6 @@
 <html>
 <head>
-    
+
     <title>Welcome : Wingtech</title>
 	<?php include "head.inc"; ?>
     <!-- Custom CSS -->
@@ -200,7 +200,7 @@
                     <img src="assets/images/news.jpg"/>
                     <div class="mask"></div>
                     <div class="content">
-                        <h2>News & Achievements</h2>
+                        <h2>News &amp; Achievements</h2>
                         <div class="info">
 			<span class="fa-stack fa-2x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>

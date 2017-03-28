@@ -65,7 +65,7 @@ $conn = getMYSQLIConnection();
                     </ul>
                 </h3>
                 <?php
-                $result = $conn->query($conn, 'SELECT * FROM team_profile WHERE roll="technical"');
+                $result = $conn->query('SELECT * FROM team_profile WHERE roll="technical"');
                 while ($row = mysqli_fetch_array($result, MYSQL_NUM))
                     echo '<div class=" col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
 <div class="img-box">
