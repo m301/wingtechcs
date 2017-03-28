@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">WINGTECH
+            <a class="navbar-brand" href="/">WINGTECH
                 <small><i class="fa fa-star"></i> way to innovation <i class="fa fa-star"></i></small>
             </a>
         </div>
